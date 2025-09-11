@@ -4,7 +4,7 @@ import React from "react";
 const PosterSection = () => {
   return (
     <section>
-      <div className="flex flex-col-reverse md:flex-row justify-around mt-24 mb-16 max-sm:my-24 gap-16 md:px-10">
+      {/* <div className="flex flex-col-reverse md:flex-row justify-around mt-24 mb-16 max-sm:my-24 gap-16 md:px-10">
         <div className="w-2/5 max-md:w-full max-md:px-14 max-sm:px-0">
           <Image
             src="/images/tiffin_service.jpg"
@@ -42,8 +42,17 @@ const PosterSection = () => {
             Call Now to Book Your Tiffin
           </a>
         </div>
-      </div>
+      </div> */}
       <div className="flex flex-col md:flex-row justify-around mb-24 mt-16 max-sm:my-24 gap-16 md:px-10">
+        <div className="w-2/5 max-md:w-full max-md:px-14 max-sm:px-0">
+          <Image
+            src="/images/FoodToGo.jpg"
+            alt="Tiffin Service"
+            className="w-full max-w-2xl max-md:max-w-full rounded-lg shadow-lg"
+            height={500}
+            width={500}
+          />
+        </div>
         <div className="flex-1 text-center max-md:text-left md:text-left w-1/2 max-md:w-full my-auto max-md:px-14 max-sm:px-0">
           <h1 className="text-6xl max-sm:text-7xl font-bold text-[#FD0103] mb-4">
             Food To Go
@@ -63,15 +72,6 @@ const PosterSection = () => {
           >
             Call Now to Order!
           </a>
-        </div>
-        <div className="w-2/5 max-md:w-full max-md:px-14 max-sm:px-0">
-          <Image
-            src="/images/FoodToGo.jpg"
-            alt="Tiffin Service"
-            className="w-full max-w-2xl max-md:max-w-full rounded-lg shadow-lg"
-            height={500}
-            width={500}
-          />
         </div>
       </div>
     </section>
